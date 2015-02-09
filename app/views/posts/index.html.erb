@@ -10,27 +10,30 @@
     <ul class="nav navbar-nav navbar-right">
       <li>
     </li>
-    <li><p style="color:#fff;margin-top:20px; margin-right:10px;"><%= link_to "Login with Twitter", new_post_path %></p></li>
-      <li><p style="color:#fff;margin-top:20px; margin-right:10px;"><%= link_to "Submit Book", new_post_path %></p></li>
+    <li><div class="btn btn-primary" style="color:#fff;margin-top:20px; margin-right:10px;"><%= link_to "LOGIN",new_post_path %></div></li>
+    <li><div class="btn btn-primary" style="color:#fff;margin-top:20px; margin-right:10px;"><%= link_to "SUBMIT",new_post_path %></div></li>
     </ul>
   </div>
 </div>
 
+<div class ="centerTable">
+
 <div class = "title">
-	<h4> Today </h4>
+  <h4> Today </h4>
 </div>
 
-<div class = "table">
-	<table class="table table-striped table-hover ">
-	  <tbody>
-	    <tr>
-	    <% @posts.each do |post| %>
-	      <td><div class="numberSquare"><div class="arrow-up"></div><p><%= post.upvoteCount %></p></div></td>
-	      <td><%= link_to post.title, post %></td>
-	      <td><%= post.content %></td>
-	      <td><%= post.poster %></td>
-	      </tr>
-	<% end %>
-	  </tbody>
-	</table>
+  <div class = "table">
+  	<table class="table table-striped table-hover ">
+  	  <tbody>
+  	    <tr>
+  	    <% @posts.each do |post| %>
+  	      <td><div class="numberSquare"><div class="arrow-up"></div><p><%= post.upvoteCount %></p></div></td>
+  	      <td><%= link_to post.title, post %></td>
+  	      <td><%= post.content %></td>
+  	      <td><%= post.poster %></td>
+  	      </tr>
+  	<% end %>
+  	  </tbody>
+  	</table>
+  </div>
 </div>

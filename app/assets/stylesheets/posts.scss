@@ -22,7 +22,6 @@ td {
 }
 
 .numberCircle {
-
     border-radius: 50%;
     behavior: url(PIE.htc); /* remove if you don't care about IE8 */
 
@@ -68,4 +67,83 @@ td {
 
 .numberSquare:hover {
 	border-bottom-color: #da552f;
+}
+
+.centerTable {
+	width:75%;
+	margin-left: auto ;
+  	margin-right: auto ;
+}
+
+//Links
+a:link {
+	color: #FFFFFF;
+	font-size : 12px;
+}
+a:visited {
+	color: #FFFFFF;
+	font-size : 12px;
+}
+a:hover {
+	color: #FFFFFF;
+	font-size : 12px;
+}
+a:active {
+	color: #FFFFFF;
+	font-size : 12px;
+}
+
+.table a:link {
+	color: #000;
+	font-size : 16px;
+	text-decoration : none;
+}
+
+.table a:visited {
+	color: #000;
+	font-size : 16px;
+	text-decoration : none;
+}
+.table a:hover {
+	color: #000;
+	font-size : 16px;
+	text-decoration : none;
+}
+.table a:active {
+	color: #000;
+	font-size : 16px;
+	text-decoration : none;
+}
+
+@charset "utf-8";
+
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+#message {
+	text-align : center;
+	margin: 5em auto;
+	width: 80%;
+	padding: 2em;
+	background: #EA6C6C;
+	font-size: 1.5em;
+	font-weight:100;
+	font-family: 'Lato', sans-serif;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-transition: all 1s ease-out;
+	-moz-transition: all 1s ease-out;
+	-o-transition: all 1s ease-out;
+	transition: all 1s ease-out;
+	color: #fff;
+}
+
+.is-visible {
+	opacity: 1;
+}
+.is-hidden {
+	opacity: 0;
+}
+.is-removed {
+	display: none;
 }
