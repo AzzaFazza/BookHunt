@@ -1,2 +1,4 @@
 BookHunt is like ProductHunt for Books
-![alt text](https://www.dropbox.com/s/3b6qilbg4z905fm/Screenshot%202015-02-09%2014.54.38.png?dl=0)
+
+It Looks Like This:
+https://www.dropbox.com/s/3b6qilbg4z905fm/Screenshot%202015-02-09%2014.54.38.png?dl=0
