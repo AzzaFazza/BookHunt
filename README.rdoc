@@ -1,5 +1,9 @@
 BookHunt is like ProductHunt for Books
 
+To run it you must do a Database Migration and then cd into the directory and run
+
+  rails server
+
 It Looks Like This:
 
 http://imgur.com/nW5oWx3.png
