@@ -2,4 +2,4 @@ BookHunt is like ProductHunt for Books
 
 It Looks Like This:
 
-![an image](http://imgur.com/nW5oWx3.png)
+(http://imgur.com/nW5oWx3.png)
