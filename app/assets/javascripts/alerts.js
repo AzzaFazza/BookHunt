@@ -1,6 +1,7 @@
-$(document).ready(function(){
+$(document).ready(function() {
   showMessage("You're Book Has been submitted for approval!");
 });
+
 function showMessage(s) {
   var m = $("#message");
   m.html(s);
