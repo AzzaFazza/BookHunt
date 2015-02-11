@@ -1,7 +1,6 @@
 class PostsController < ApplicationController
 		def index
 			@posts = Post.all
-			@posts.sort{|a,b| b[:upvoteCount] <=> a[:upvoteCount]}
 		end
 
 		def new
