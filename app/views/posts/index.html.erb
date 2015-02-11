@@ -10,11 +10,17 @@
     <ul class="nav navbar-nav navbar-right">
       <li>
     </li>
-    <li><div class="btn btn-primary" style="color:#fff;margin-top:20px; margin-right:10px;"><%= link_to "LOGIN",new_post_path %></div></li>
+    <li><div class="btn btn-primary" style="color:#fff;margin-top:20px; margin-right:10px;"><%= link_to "LOGIN",'/users/sign_in' %></div></li>
     <li><div class="btn btn-primary" style="color:#fff;margin-top:20px; margin-right:10px;"><%= link_to "SUBMIT",new_post_path %></div></li>
     </ul>
   </div>
 </div>
+
+<% flash.each do |key, value| %>
+  <div class = "alert-success">
+    <p style = "color:#ffffff><%= value %></p>
+  </div>
+<% end %>
 
 <div class ="centerTable">
 
