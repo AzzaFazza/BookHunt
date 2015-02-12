@@ -47,10 +47,13 @@ audio:not([controls]) {
   display: none
 }
 a {
-  background-color: transparent
+  background-color: transparent;
+  text-decoration:none;
 }
+
 a:active, a:hover {
-  outline: 0
+  outline: 0;
+  text-decoration:none;
 }
 abbr[title] {
   border-bottom: 1px dotted
@@ -3755,7 +3758,7 @@ textarea.input-group-sm>.form-control, textarea.input-group-sm>.input-group-addo
   }
 }
 .navbar-default {
-  background-color: #34495e;
+  background-color: #2C3E50;
   border-color: transparent
 }
 .navbar-default .navbar-brand {
@@ -5695,9 +5698,9 @@ button.close {
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3)
 }
 .btn-primary {
-  background-image: -webkit-radial-gradient(circle, #2196f3 80%, #0d87e9 81%);
-  background-image: -o-radial-gradient(circle, #2196f3 80%, #0d87e9 81%);
-  background-image: radial-gradient(circle, #2196f3 80%, #0d87e9 81%);
+  background-image: -webkit-radial-gradient(circle, #3498DB 80%, #0d87e9 81%);
+  background-image: -o-radial-gradient(circle, #3498DB 80%, #0d87e9 81%);
+  background-image: radial-gradient(circle, #3498DB 80%, #0d87e9 81%);
   background-repeat: no-repeat;
   -webkit-background-size: 200% 200%;
   background-size: 200%;
@@ -6228,4 +6231,20 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
 h4 {
   margin-bottom : 0px !important;
   margin-top : 2px !important;
+}
+
+.loginContainer {
+  height : auto;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px
+}
+
+.bgContainer {
+  background: url(loginBG.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }

@@ -1,0 +1,72 @@
+<title>Book Hunt</title>
+<div class="navbar navbar-default">
+  <div class="navbar-header">
+    <a class="navbar-brand" href="/posts"><div class="numberCircle"><p>BH</p></div></a>
+    <p class = "titleHeader">Book Hunt</p>
+  </div>
+  <div class="navbar-collapse collapse navbar-responsive-collapse">
+      </li>
+    </ul>
+  </div>
+</div>
+  <div class="loginContainer">
+    <h2>Log in</h2>
+
+    <span class="input input--hideo">
+    <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+      <div class="field">
+        <%= f.label :email %><br />
+        <%= f.email_field :email, autofocus: true, :class => "input__field input__field--hideo"%>
+      </div>
+
+      <div class="field">
+        <%= f.label :password %><br />
+        <%= f.password_field :password, autocomplete: "off", :class => "input__field input__field--hideo" %>
+      </div>
+
+      <div class="actions">
+        <%= f.submit "Log in", :style => "margin-top:10px" %>
+      </div>
+    <% end %>
+  </span>
+
+    <%= render "devise/shared/links" %>
+  </div>
+
+
+  <script src="classie.js"></script>
+  <script>
+    (function() {
+      // trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
+      if (!String.prototype.trim) {
+        (function() {
+          // Make sure we trim BOM and NBSP
+          var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+          String.prototype.trim = function() {
+            return this.replace(rtrim, '');
+          };
+        })();
+      }
+
+      [].slice.call( document.querySelectorAll( 'input.input__field' ) ).forEach( function( inputEl ) {
+        // in case the input is already filled..
+        if( inputEl.value.trim() !== '' ) {
+          classie.add( inputEl.parentNode, 'input--filled' );
+        }
+
+        // events:
+        inputEl.addEventListener( 'focus', onInputFocus );
+        inputEl.addEventListener( 'blur', onInputBlur );
+      } );
+
+      function onInputFocus( ev ) {
+        classie.add( ev.target.parentNode, 'input--filled' );
+      }
+
+      function onInputBlur( ev ) {
+        if( ev.target.value.trim() === '' ) {
+          classie.remove( ev.target.parentNode, 'input--filled' );
+        }
+      }
+    })();
+  </script>
