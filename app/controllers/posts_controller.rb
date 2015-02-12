@@ -37,7 +37,8 @@ class PostsController < ApplicationController
 		end
 
 		def updateCount
-			@post = Post.find(params[:upvoteCount])
+			@post = Post.find(params[:id])
+			@post.increment! :upvoteCount
 		end
 		helper_method :updateCount
 

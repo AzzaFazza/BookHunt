@@ -1,7 +1,43 @@
-<small> <%= @post.title %> </small>
-<br>
-<small> <%= @post.content %> </small>
-<br>
-<small> <%= @post.poster %> </small>
-<br>
-<small> <%= @post.created_at%> </small>
+<title>Book Hunt</title>
+<div class="navbar navbar-default">
+  <div class="navbar-header">
+    <a class="navbar-brand" href="/posts"><div class="numberCircle"><p>BH</p></div></a>
+    <p class = "titleHeader">Book Hunt</p>
+  </div>
+  <div class="navbar-collapse collapse navbar-responsive-collapse">
+      </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li>
+    </li>
+    <% if user_signed_in? %>
+    <li><div class="btn btn-primary" style="color:#fff;margin-top:20px; margin-right:10px;"><%= link_to(current_user.email, destroy_user_session_path, :method => :delete)   %></div>
+    </li>
+    <% else %>
+      <li><div class="btn btn-primary" style="color:#fff;margin-top:20px; margin-right:10px;"><%= link_to "LOGIN",'/users/sign_in' %></div></li>
+    <% end %>
+    <li><div class="btn btn-primary" style="color:#fff;margin-top:20px; margin-right:10px;"><%= link_to "SUBMIT BOOK",new_post_path %></div></li>
+    </ul>
+  </div>
+</div>
+
+<div class="container">
+
+  <header class="codrops-header">
+    <h1> <%= @post.title %> </h1>
+  </header>
+</div>
+
+<div class="container">
+  <header class="codrops-header">
+    <h1> <%= @post.content %> </h1>
+  </header>
+</div>
+
+<div class="container">
+  <header class="codrops-header">
+    <h1> <%= @post.poster %> </h1>
+  </header>
+</div>
+
+</script>
